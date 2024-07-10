@@ -18,6 +18,9 @@
             android:name=".Recuperar_Contra"
             android:exported="false" />
         <activity
+            android:name=".Registrate"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
