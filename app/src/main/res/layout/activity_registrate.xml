@@ -5,4 +5,145 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registrate"/>
+    tools:context=".Registrate">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="102dp"
+                android:layout_height="96dp"
+                app:srcCompat="@drawable/imagen"
+                tools:layout_editor_absoluteX="53dp"
+                tools:layout_editor_absoluteY="34dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrarte"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="138dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario:"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="185dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario:"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="185dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña:"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="233dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="182dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/fondoazul"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="157dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="182dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/fondoazul"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="247dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="182dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/fondoazul"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="199dp" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="182dp"
+                android:layout_height="20dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="199dp" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="182dp"
+                android:layout_height="20dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Name"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="157dp" />
+
+            <EditText
+                android:id="@+id/txtPasword"
+                android:layout_width="180dp"
+                android:layout_height="18dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textSize="8sp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="247dp" />
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="136dp"
+                android:layout_height="39dp"
+                android:lineSpacingExtra="1sp"
+                android:text="Registrase"
+                tools:layout_editor_absoluteX="42dp"
+                tools:layout_editor_absoluteY="324dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
