@@ -7,17 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".Recuperar_Contra">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="207dp"
-        android:layout_height="195dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -30,6 +19,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.055" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="459dp"
+        android:layout_height="304dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/escudo" />
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -50,7 +51,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Crea una nueva contraseña"
-            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="120dp"
@@ -62,7 +62,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Por favor ingrese su dirección de correo electrónico  para recuperar su contraseña olvidada"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="#0B0B0B"
             android:textSize="16sp" />
 
@@ -93,11 +93,12 @@
             android:inputType="text" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:layout_width="1dp"
+            android:layout_height="42dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@drawable/Usuario" />
+
     </LinearLayout>
 
     <TextView
@@ -153,12 +154,6 @@
             android:hint="Escribe El codigo de confirmacion"
             android:inputType="text" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="2dp"
-            android:layout_height="42dp"
-            android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
     <Button
