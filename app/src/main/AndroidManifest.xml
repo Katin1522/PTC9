@@ -28,7 +28,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Otras actividades -->
+        <activity
+            android:name=".notificaciones"
+            android:exported="false" />
         <activity
             android:name=".activity_perfil"
             android:exported="false" />
