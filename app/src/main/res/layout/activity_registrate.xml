@@ -114,6 +114,7 @@
                 android:id="@+id/txtNombreRegistro"
                 android:layout_width="334dp"
                 android:layout_height="41dp"
+
                 android:ems="10"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="34dp"
@@ -124,6 +125,7 @@
                 android:id="@+id/txtUsuarioRegistro"
                 android:layout_width="335dp"
                 android:layout_height="47dp"
+
                 android:ems="10"
                 android:inputType="text"
                 tools:layout_editor_absoluteX="30dp"
@@ -139,6 +141,15 @@
                 tools:layout_editor_absoluteX="33dp"
                 tools:layout_editor_absoluteY="428dp"
                 tools:ignore="MissingConstraints"/>
+
+            <Button
+                android:id="@+id/btnRegistrarse"
+                android:layout_width="136dp"
+                android:layout_height="39dp"
+                android:lineSpacingExtra="1sp"
+                android:text="Registrase"
+                tools:layout_editor_absoluteX="142dp"
+                tools:layout_editor_absoluteY="437dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
