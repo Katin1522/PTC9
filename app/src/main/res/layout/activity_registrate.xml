@@ -57,13 +57,13 @@
             <Button
                 android:id="@+id/btnRegistrarse"
                 android:layout_width="136dp"
-                android:layout_height="39dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="620dp"
-                android:lineSpacingExtra="1sp"
-                android:text="Registrase"
+                android:lineSpacingExtra="5sp"
+                android:text="Registrarse"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="155dp"
-                tools:ignore="MissingConstraints"/>
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="155dp" />
 
             <TextView
                 android:id="@+id/textView6"
