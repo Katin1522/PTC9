@@ -30,7 +30,8 @@
                 android:layout_height="191dp"
                 app:srcCompat="@drawable/imagen"
                 tools:layout_editor_absoluteX="100dp"
-                tools:layout_editor_absoluteY="56dp" />
+                tools:layout_editor_absoluteY="56dp"
+                tools:ignore="MissingConstraints"/>
 
             <TextView
                 android:id="@+id/textView16"
@@ -41,25 +42,17 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="145dp" />
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="82dp"
-                android:layout_height="18dp"
-                android:text="Contraseña:"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="425dp" />
+                tools:layout_editor_absoluteX="145dp"
+                tools:ignore="MissingConstraints"/>
 
             <ImageView
                 android:id="@+id/imageView61"
                 android:layout_width="342dp"
                 android:layout_height="38dp"
                 app:srcCompat="@drawable/fondoazul"
-                tools:layout_editor_absoluteX="27dp"
-                tools:layout_editor_absoluteY="443dp" />
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="438dp"
+                tools:ignore="MissingConstraints"/>
 
             <Button
                 android:id="@+id/btnRegistrarse"
@@ -69,23 +62,26 @@
                 android:lineSpacingExtra="1sp"
                 android:text="Registrase"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="155dp" />
+                tools:layout_editor_absoluteX="155dp"
+                tools:ignore="MissingConstraints"/>
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                tools:layout_editor_absoluteX="36dp"
-                tools:layout_editor_absoluteY="255dp" />
+                android:text="Nombre"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="280dp"
+                tools:ignore="MissingConstraints"/>
 
             <TextView
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="Usuario"
                 tools:layout_editor_absoluteX="31dp"
-                tools:layout_editor_absoluteY="347dp" />
+                tools:layout_editor_absoluteY="347dp"
+                tools:ignore="MissingConstraints"/>
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -93,7 +89,56 @@
                 android:layout_height="40dp"
                 app:srcCompat="@drawable/fondoazul"
                 tools:layout_editor_absoluteX="31dp"
-                tools:layout_editor_absoluteY="366dp" />
+                tools:layout_editor_absoluteY="366dp"
+                tools:ignore="MissingConstraints"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="419dp"
+                tools:ignore="MissingConstraints"/>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="344dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/fondoazul"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="299dp"
+                tools:ignore="MissingConstraints"/>
+
+            <EditText
+                android:id="@+id/txtNombreRegistro"
+                android:layout_width="334dp"
+                android:layout_height="41dp"
+                android:ems="10"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="293dp"
+                tools:ignore="MissingConstraints"/>
+
+            <EditText
+                android:id="@+id/txtUsuarioRegistro"
+                android:layout_width="335dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="358dp"
+                tools:ignore="MissingConstraints"/>
+
+            <EditText
+                android:id="@+id/txtCOntrsenaRegistro"
+                android:layout_width="336dp"
+                android:layout_height="46dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="428dp"
+                tools:ignore="MissingConstraints"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
