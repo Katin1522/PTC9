@@ -18,11 +18,11 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtnombreExp = findViewById<EditText>(R.id.txtnombreExp)
-        val txtHabitacionExp = findViewById<EditText>(R.id.txtHabitacionExp)
-        val txtCategoriaExp = findViewById<EditText>(R.id.txtCategoriaExp)
-        val txtdiagExp = findViewById<EditText>(R.id.txtdiagExp)
-        val txthistorialExp = findViewById<EditText>(R.id.txthistorialExp)
+        val txtnombreExp = findViewById<EditText>(R.id.txtnombreEP)
+        val txtHabitacionExp = findViewById<EditText>(R.id.txtHabitacionEP)
+        val txtCategoriaExp = findViewById<EditText>(R.id.txtCategoriaEP)
+        val txtdiagExp = findViewById<EditText>(R.id.txtdiagnosEP)
+        val txthistorialExp = findViewById<EditText>(R.id.txthistorialEP)
         val btnAgregarExp = findViewById<Button>(R.id.btnAgregarExp)
 
         btnAgregarExp.setOnClickListener {
@@ -31,7 +31,6 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
             val categoria = txtCategoriaExp.text.toString()
             val diagnostico = txtdiagExp.text.toString()
             val historial = txthistorialExp.text.toString()
-
         }
         }
     }

@@ -12,8 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eliminar"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="660dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -46,18 +50,29 @@
         android:layout_height="wrap_content"
         android:text="Nombre"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="113dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
 
-    <EditText
-        android:id="@+id/txtnombreAin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese el nombre del medicamento"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="140dp" />
+    <LinearLayout
+        android:layout_width="217dp"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/fondo"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="162dp">
+
+        <EditText
+            android:id="@+id/txtnombreIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el nombre del medicamento"
+            android:inputType="text" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView41"
@@ -65,39 +80,66 @@
         android:layout_height="wrap_content"
         android:text="Marca"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="202dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
 
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese la marca"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="224dp" />
+    <LinearLayout
+        android:layout_width="222dp"
+        android:layout_height="43dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367">
+
+        <EditText
+            android:id="@+id/txtMarcaIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese la marca"
+            android:inputType="text" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnAgregarAin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="660dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
 
     <Button
         android:id="@+id/btnactualizarAin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Actualizar"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="660dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvItemsMedicamento"
         android:layout_width="409dp"
         android:layout_height="352dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="283dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

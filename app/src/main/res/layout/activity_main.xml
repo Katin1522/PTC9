@@ -23,47 +23,22 @@
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="104dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    cx
+
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnIniciarSecion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar seción"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.862" />
 
-    <EditText
-        android:id="@+id/txtUsuarioSe"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Ingrese correo o ususario"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.094" />
-
-    <EditText
-        android:id="@+id/txtContrasena"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Ingrese contraseña"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.196" />
-
-    cx<TextView
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,29 +92,23 @@
         android:hint="Ingrese su contraseña"
         android:inputType="text"
         tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="444dp" />
+        tools:layout_editor_absoluteY="444dp" /><![CDATA[
         android:text="¿Olvidaste la contraseña?"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
 
-    <Button
-        android:id="@+id/btnIniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Iniciar sesion"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="603dp" />
+    ]]>
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Olvidaste tu contraseña?"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="530dp" />
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="534dp" />
+    app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
