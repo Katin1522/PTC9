@@ -11,30 +11,10 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregar Expediente"
+        android:text="Editar expediente"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="136dp"
         tools:layout_editor_absoluteY="46dp" />
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="98dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="520dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAgregarExp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView24"
@@ -42,8 +22,8 @@
         android:layout_height="wrap_content"
         android:text="Nombre"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="111dp" />
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="94dp" />
 
     <TextView
         android:id="@+id/textView25"
@@ -52,7 +32,7 @@
         android:text="Habitacion"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="222dp" />
+        tools:layout_editor_absoluteY="188dp" />
 
     <TextView
         android:id="@+id/textView26"
@@ -61,7 +41,7 @@
         android:text="Categoria"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteY="292dp" />
 
     <TextView
         android:id="@+id/textView27"
@@ -70,7 +50,7 @@
         android:text="Diagnostico"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="439dp" />
+        tools:layout_editor_absoluteY="390dp" />
 
     <TextView
         android:id="@+id/textView28"
@@ -79,7 +59,7 @@
         android:text="Historial"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="549dp" />
+        tools:layout_editor_absoluteY="495dp" />
 
     <EditText
         android:id="@+id/txtnombreEP"
@@ -88,8 +68,8 @@
         android:ems="10"
         android:hint="Agregar nombre"
         android:inputType="text"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="144dp" />
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="116dp" />
 
     <EditText
         android:id="@+id/txtHabitacionEP"
@@ -99,7 +79,7 @@
         android:hint="Agregar numero de habitacion"
         android:inputType="numberPassword"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="258dp" />
+        tools:layout_editor_absoluteY="210dp" />
 
     <EditText
         android:id="@+id/txtCategoriaEP"
@@ -109,7 +89,7 @@
         android:hint="Agregar numero de categoria"
         android:inputType="numberPassword"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_editor_absoluteY="314dp" />
 
     <EditText
         android:id="@+id/txtdiagnosEP"
@@ -119,7 +99,7 @@
         android:hint="Agregar Diagnostico"
         android:inputType="text"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="473dp" />
+        tools:layout_editor_absoluteY="412dp" />
 
     <EditText
         android:id="@+id/txthistorialEP"
@@ -128,32 +108,31 @@
         android:ems="10"
         android:hint="Agregar Historial"
         android:inputType="text"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="587dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="517dp" />
 
     <Button
-        android:id="@+id/btnAgregarExp"
+        android:id="@+id/btnAgregarEP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="643dp" />
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <Button
+        android:id="@+id/btnEliminarEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="593dp" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="63dp"
-        android:layout_height="66dp"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="57dp"
+        android:id="@+id/imageView15"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="24dp"
         tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="49dp"
-        android:layout_height="41dp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
