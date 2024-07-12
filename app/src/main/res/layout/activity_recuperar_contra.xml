@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txtHistorialExp"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Recuperar_Contra">
@@ -12,163 +12,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recuperación de contraseña "
-        android:textColor="#020202"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.091" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="459dp"
-        android:layout_height="304dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072"
-        app:srcCompat="@drawable/escudo" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="387dp"
-        android:layout_height="89dp"
-        android:layout_marginHorizontal="25dp"
-        android:background="@drawable/fondo"
-        android:orientation="vertical"
-        android:paddingHorizontal="5dp"
-        android:paddingVertical="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Crea una nueva contraseña"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="120dp"
-            tools:layout_editor_absoluteY="356dp" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Por favor ingrese su dirección de correo electrónico  para recuperar su contraseña olvidada"
-            android:textAlignment="textStart"
-            android:textColor="#0B0B0B"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="387dp"
-        android:layout_height="45dp"
-        android:layout_marginHorizontal="25dp"
-        android:background="@drawable/fondo"
-        android:orientation="horizontal"
-        android:paddingHorizontal="5dp"
-        android:paddingVertical="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692">
-
-        <EditText
-            android:id="@+id/txtCodigoRecu"
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Escribe tu correo electronico"
-            android:inputType="text" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="1dp"
-            android:layout_height="42dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/Usuario" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Correo electronico:"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Codigo de confirmacion:"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="387dp"
-        android:layout_height="45dp"
-        android:layout_marginHorizontal="25dp"
-        android:background="@drawable/fondo"
-        android:orientation="horizontal"
-        android:paddingHorizontal="5dp"
-        android:paddingVertical="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839">
-
-        <EditText
-            android:id="@+id/txtCodigo"
-            android:layout_width="50dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Escribe El codigo de confirmacion"
-            android:inputType="text" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnEnviar"
-        android:layout_width="178dp"
-        android:layout_height="48dp"
-        android:background="@drawable/fondoazul"
-        android:shadowColor="@drawable/fondoazul"
-        android:text="Enviar"
-        android:textSize="18sp"
+        android:id="@+id/imageView"
+        android:layout_width="207dp"
+        android:layout_height="195dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintVertical_bias="0.229"
+        tools:srcCompat="@tools:sample/avatars" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crea una nueva contraseña"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="349dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

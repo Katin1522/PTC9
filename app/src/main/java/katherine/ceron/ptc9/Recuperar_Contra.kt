@@ -2,7 +2,9 @@ package katherine.ceron.ptc9
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -21,11 +23,17 @@ class Recuperar_Contra : AppCompatActivity() {
             insets
         }
         val btnEnviar = findViewById<Button>(R.id.btnEnviar)
+        val txtCodigo = findViewById<EditText>(R.id.txtCodigo)
+        val txtCodigoRecu = findViewById<EditText>(R.id.txtCodigoRecu)
+
+        var error = false
 
         btnEnviar.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
-                enviarCorreo("dlphcontac@gmail.com","Recuperación de contraseña", "Estimado/a usuario/a, Hemos recibido una solicitud para restablecer la contraseña de su cuenta. Si usted no realizó esta solicitud, por favor ignore este mensaje.Para restablecer su contraseña")
+                enviarCorreo( txtCodigoRecu.text.toString().toString(),"Recuperación de contraseña", "Estimado/a usuario/a, Hemos recibido una solicitud para restablecer la contraseña de su cuenta. Si usted no realizó esta solicitud, por favor ignore este mensaje.Para restablecer su contraseña")
             }
         }
+
+        git 
     }
 }

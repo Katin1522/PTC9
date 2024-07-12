@@ -1,6 +1,8 @@
 package katherine.ceron.ptc9
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,20 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val txtnombreExp = findViewById<EditText>(R.id.txtnombreExp)
+        val txtHabitacionExp = findViewById<EditText>(R.id.txtHabitacionExp)
+        val txtCategoriaExp = findViewById<EditText>(R.id.txtCategoriaExp)
+        val txtdiagExp = findViewById<EditText>(R.id.txtdiagExp)
+        val txthistorialExp = findViewById<EditText>(R.id.txthistorialExp)
+        val btnAgregarExp = findViewById<Button>(R.id.btnAgregarExp)
+
+        btnAgregarExp.setOnClickListener {
+            val nombre = txtnombreExp.text.toString()
+            val habitacion = txtHabitacionExp.text.toString()
+            val categoria = txtCategoriaExp.text.toString()
+            val diagnostico = txtdiagExp.text.toString()
+            val historial = txthistorialExp.text.toString()
+
+        }
+        }
     }
-}
