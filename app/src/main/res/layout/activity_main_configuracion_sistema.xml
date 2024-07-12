@@ -13,7 +13,7 @@
         android:layout_height="29dp"
         android:text="Configuracion del Sistema "
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="45dp" />
 
     <ImageView
@@ -97,5 +97,13 @@
         android:text="Agregar"
         tools:layout_editor_absoluteX="221dp"
         tools:layout_editor_absoluteY="577dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="27dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
