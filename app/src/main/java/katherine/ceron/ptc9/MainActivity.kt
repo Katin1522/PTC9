@@ -1,7 +1,10 @@
 package katherine.ceron.ptc9
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +22,12 @@ class MainActivity : AppCompatActivity() {
         }
         val txtCorreoUsuLog = findViewById<EditText>(R.id.txtCorreoUsuLog)
         val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasenaLog)
+        val lbOlvidarContra = findViewById<TextView>(R.id.lbOlvidaContra)
+        val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSecion)
+
+        lbOlvidarContra.setOnClickListener{
+            val pantallaRegistrate = Intent()
+        }
 
         btnIniciarSecion.setOnClickListener{
             val Correo= txtCorreoUsuLog.text.toString()

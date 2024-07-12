@@ -1,6 +1,8 @@
 package katherine.ceron.ptc9
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,10 @@ class Registrate : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val txtNombreRe = findViewById<EditText>(R.id.txtNombreRe)
+        val txtUsuarioRe= findViewById<EditText>(R.id.txtUsuarioRe)
+        val txtContraRe = findViewById<EditText>(R.id.txtContraRe)
+        val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
+
     }
 }

@@ -102,7 +102,7 @@
     ]]>
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/lbOlvidaContra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Olvidaste tu contraseña?"
