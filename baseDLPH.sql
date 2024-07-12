@@ -1,8 +1,8 @@
 CREATE TABLE Usuarios (
     idUsuario NUMBER NOT NULL,
+    nombreUsuario varchar2(50) not null,
     contrasenaUsuario VARCHAR2(50) NOT NULL,
     fechaRegistro DATE,
-    edadU NUMBER NOT NULL CHECK (edadU >= 0),
     CONSTRAINT pk_Usuarios PRIMARY KEY (idUsuario)
 );
 

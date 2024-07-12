@@ -36,36 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crea una nueva contraseña"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="335dp" />
-
-
-
-    <LinearLayout
-        android:id="@+id/rn9bjbl07bj"
-        android:layout_width="380dp"
-        android:layout_height="45dp"
-        android:layout_marginHorizontal="19dp"
-        android:background="@drawable/fondo"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="5dp"
-        android:paddingVertical="2dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="440dp">
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Por favor ingrese su dirección de correo electrónico  para recuperar su contraseña olvidada"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="372dp" />
-    </LinearLayout>
-
-
-
-
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="349dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
