@@ -31,7 +31,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity_editarExpediente"
-            android:name=".activity_menu"
             android:exported="false" />
         <activity
             android:name=".Consulta_Medica"
