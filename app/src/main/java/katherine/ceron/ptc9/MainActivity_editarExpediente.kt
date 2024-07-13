@@ -1,6 +1,8 @@
 package katherine.ceron.ptc9
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,21 @@ class MainActivity_editarExpediente : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val txtnombreEP = findViewById<EditText>(R.id.txtnombreEP)
+        val txtHabitacionEP = findViewById<EditText>(R.id.txtHabitacionEP)
+        val txtCategoriaEP= findViewById<EditText>(R.id.txtCategoriaEP)
+        val txtdiagnosEP = findViewById<EditText>(R.id.txtdiagnosEP)
+        val txthistorialEP = findViewById<EditText>(R.id.txthistorialEP)
+        val btnAgregarEP = findViewById<Button>(R.id.btnAgregarEP)
+        val btnEliminarEP = findViewById<Button>(R.id.btnEliminarEP)
+
+        btnAgregarEP.setOnClickListener {
+            val nombreEP = txtnombreEP.text.toString()
+            val habitacionEP = txtHabitacionEP.text.toString()
+            val CategoriaEP = txtCategoriaEP.text.toString()
+            val diagnosticoEP = txtdiagnosEP.text.toString()
+            val historialEP = txthistorialEP.text.toString()
+        }
+
     }
 }

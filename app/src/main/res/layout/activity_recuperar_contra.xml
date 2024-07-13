@@ -12,7 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recuperación de contraseña "
+        android:textColor="#0F0E0E"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,23 +22,107 @@
         app:layout_constraintVertical_bias="0.091" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="207dp"
-        android:layout_height="195dp"
+        android:id="@+id/imageView7"
+        android:layout_width="334dp"
+        android:layout_height="385dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/escudo" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crea una nueva contraseña"
+        android:textColor="#000000"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="349dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="381dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crea una nueva contraseña"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Por favor ingrese su dirección de correo electrónico  para recuperar su contraseña olvidada"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo Electronico:"
+        android:textColor="#040404"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="379dp"
+        android:layout_height="46dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781">
+
+        <EditText
+            android:id="@+id/txtCorreoRecu1"
+            android:layout_width="377dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Escribe tu correo electrónico "
+            android:inputType="text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviarRecu"
+        android:layout_width="182dp"
+        android:layout_height="52dp"
+        android:text="Enviar"
+        app:iconTint="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907"
+        app:rippleColor="#2196F3"
+        app:strokeColor="#2196F3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
