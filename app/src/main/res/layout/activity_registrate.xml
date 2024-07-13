@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="211dp"
-        android:layout_height="191dp"
+        android:layout_width="282dp"
+        android:layout_height="252dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
+        app:layout_constraintVertical_bias="0.171"
         app:srcCompat="@drawable/imagen"
         tools:ignore="MissingConstraints" />
 
@@ -29,10 +29,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btnRegistrarse"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"
+        app:layout_constraintVertical_bias="0.052"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -40,28 +40,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre:"
+        android:textColor="#000000"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="299dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="357dp"
-        android:layout_height="40dp"
+        android:layout_width="360dp"
+        android:layout_height="46dp"
         android:background="@drawable/fondo"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483">
+        app:layout_constraintVertical_bias="0.499">
 
 
         <EditText
             android:id="@+id/txtNombreRe"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Escribe tu Nombre"
             android:inputType="text" />
@@ -72,13 +77,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Usuario:"
-        android:textColor="#262424"
+        android:textColor="#000000"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="357dp"
         android:layout_height="40dp"
         android:background="@drawable/fondo"
@@ -91,8 +101,8 @@
 
         <EditText
             android:id="@+id/txtUsuarioRe"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Escribe tu Nombrede Usuario"
             android:inputType="text" />
@@ -110,6 +120,7 @@
         tools:layout_editor_absoluteY="520dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="357dp"
         android:layout_height="40dp"
         android:background="@drawable/fondo"
@@ -122,8 +133,8 @@
 
         <EditText
             android:id="@+id/txtContraRe"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="352dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Escribe una Contraseña"
             android:inputType="textPassword" />

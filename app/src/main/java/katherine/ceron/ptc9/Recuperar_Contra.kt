@@ -16,23 +16,20 @@ class Recuperar_Contra : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_recuperar_contra)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.txtHistorialExp)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val btnEnviar = findViewById<Button>(R.id.btnEnviar)
-        val txtCodigo = findViewById<EditText>(R.id.txtCodigo)
-        val txtCodigoRecu = findViewById<EditText>(R.id.txtCodigoRecu)
+        val btnEnviarRe = findViewById<Button>(R.id.btnEnviarRecu)
+        val txtCodigoRecu1 = findViewById<EditText>(R.id.txtCorreoRecu1)
 
         var error = false
 
-        btnEnviar.setOnClickListener {
+        btnEnviarRe.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
-                enviarCorreo( txtCodigoRecu.text.toString().toString(),"Recuperación de contraseña", "Estimado/a usuario/a, Hemos recibido una solicitud para restablecer la contraseña de su cuenta. Si usted no realizó esta solicitud, por favor ignore este mensaje.Para restablecer su contraseña")
+                enviarCorreo( txtCodigoRecu1.text.toString().toString(),"Recuperación de contraseña", "Estimado/a usuario/a, Hemos recibido una solicitud para restablecer la contraseña de su cuenta. Si usted no realizó esta solicitud, por favor ignore este mensaje.Para restablecer su contraseña")
             }
         }
-
-        git 
     }
 }

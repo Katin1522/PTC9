@@ -23,5 +23,12 @@ class Registrate : AppCompatActivity() {
         val txtContraRe = findViewById<EditText>(R.id.txtContraRe)
         val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
 
+
+        btnRegistrarse.setOnClickListener {
+            val Nombre = txtNombreRe.text.toString()
+            val Usuario = txtUsuarioRe.text.toString()
+            val Contrasena = txtContraRe.text.toString()
+        }
+
     }
 }
