@@ -2,6 +2,7 @@ package katherine.ceron.ptc9
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings.Global
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -9,6 +10,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import modelo.ClaseConexion
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,8 +35,23 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnIniciarSecion.setOnClickListener{
-            val Correo= txtCorreoUsuLog.text.toString()
-            val Contrasena= txtContrasenaLog.text.toString()
+           val pantallaPrincipal = Intent(this,Bienvenida::calss,java)
+            GlobalScope.launch (Dispatchers.IO){
+
+                val objConexion = ClaseConexion().cadenaConexion()
+                val comprobarUsuario = objConexion?.prepareStatement("SELECT * FROM USUARIO WHERE USUARIO = ? AND CLAVE = ? ")!!
+                comprobarUsuario.setString(1,txtCorreoUsuLog.text.toString())
+                comprobarUsuario.setString(2,txtContrasenaLog.text.toString())
+
+                val resultado = comprobarUsuario.executeQuery()
+                if (resultado.next()){
+                    startActivity(pantallaPrincipal)
+                } else {
+                    println("Sus credenciales estan incorrectas verifique sus credenciales o no ha creado una cuenta")
+                }
+            }
+
+
         }
 
     }
