@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuDoctorEnfermero">
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="229dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="496dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="229dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="496dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="229dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Citas"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuraciones"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expediente"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habitaciones"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta medica"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receta"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicamentos"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesion"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="117dp"
+        android:layout_height="122dp"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="519dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
