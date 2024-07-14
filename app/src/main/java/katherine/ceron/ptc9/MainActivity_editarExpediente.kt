@@ -18,7 +18,7 @@ class MainActivity_editarExpediente : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtnombreEP = findViewById<EditText>(R.id.txtnombreEP)
+        val txtnombreEP = findViewById<EditText>(R.id.txtnombreAgregarP)
         val txtHabitacionEP = findViewById<EditText>(R.id.txtHabitacionEP)
         val txtCategoriaEP= findViewById<EditText>(R.id.txtCategoriaEP)
         val txtdiagnosEP = findViewById<EditText>(R.id.txtdiagnosEP)

@@ -3,6 +3,7 @@ package katherine.ceron.ptc9
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,6 +23,13 @@ class MainActivity_ConfiguracionSistema : AppCompatActivity() {
         val txtusuarioNuevo = findViewById<EditText>(R.id.txtusuarioNuevo)
         val txtcontrasenaNueva = findViewById<EditText>(R.id.txtcontrasenaNueva)
         val btnAgregarUser =findViewById<Button>(R.id.btnAgregarUser)
+        val spinner1 = findViewById<Spinner>(R.id.spinner1)
 
+        btnAgregarUser.setOnClickListener {
+            val nombre = txtnombreNuevo.text.toString()
+            val usuario = txtusuarioNuevo.text.toString()
+            val contrasena = txtcontrasenaNueva.text.toString()
+            val rol = spinner1.selectedItem.toString()
+        }
     }
 }
