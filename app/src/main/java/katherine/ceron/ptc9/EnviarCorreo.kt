@@ -20,6 +20,7 @@ suspend fun  enviarCorreo(receiver: String, subjecto: String, message: String)=w
         put("mail.smtp.port", "465")
         }
 
+
     val session = Session.getInstance(props, object : javax.mail.Authenticator() {
         override fun getPasswordAuthentication(): PasswordAuthentication {
             return PasswordAuthentication("dlphcontac@gmail.com","trma nrfw jkcn gwtv")

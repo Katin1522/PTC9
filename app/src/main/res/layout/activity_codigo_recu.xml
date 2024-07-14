@@ -79,15 +79,15 @@
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo Electronico:"
+        android:text="Codigo:"
         android:textColor="#040404"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.705" />
 
     <LinearLayout
         android:id="@+id/linearLayout6"
@@ -106,7 +106,7 @@
             android:layout_width="377dp"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="Escribe tu correo electrónico "
+            android:hint="Escribe el codigo que le llego al correo"
             android:inputType="text" />
     </LinearLayout>
 
@@ -114,7 +114,7 @@
         android:id="@+id/btnConfirmarcodi"
         android:layout_width="182dp"
         android:layout_height="52dp"
-        android:text="Enviar"
+        android:text="Verificar"
         app:iconTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
