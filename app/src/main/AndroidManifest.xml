@@ -34,9 +34,9 @@
 
             android:name=".notificaciones"
             android:exported="false" />
-
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,13 +45,16 @@
         </application>
         <activity
             android:name=".activity_perfil"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="WrongManifestParent" />
         <activity
             android:name=".Recuperar_Contra"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="WrongManifestParent" />
         <activity
             android:name=".Registrate"
-            android:exported="false" />
-    </application>
+            android:exported="false"
+            tools:ignore="WrongManifestParent" />
+
 
 </manifest>
