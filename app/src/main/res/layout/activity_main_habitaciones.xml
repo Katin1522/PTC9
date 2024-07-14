@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteY="88dp" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/NombreCM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Habitacion"
@@ -45,7 +45,7 @@
         tools:layout_editor_absoluteY="205dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtConfirmarContra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

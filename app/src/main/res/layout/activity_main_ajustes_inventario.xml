@@ -19,30 +19,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.966" />
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="33dp"
-        android:layout_height="40dp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="29dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <TextView
         android:id="@+id/textView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ajustes inventario"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="29dp" />
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="94dp"
-        android:layout_height="93dp"
-        tools:layout_editor_absoluteX="291dp"
-        tools:layout_editor_absoluteY="69dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
         android:id="@+id/textView39"
@@ -60,10 +49,14 @@
     <LinearLayout
         android:layout_width="217dp"
         android:layout_height="40dp"
-        android:orientation="vertical"
         android:background="@drawable/fondo"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="162dp">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234">
 
         <EditText
             android:id="@+id/txtnombreIN"
@@ -88,16 +81,17 @@
         app:layout_constraintVertical_bias="0.301" />
 
     <LinearLayout
+        android:id="@+id/linearLayout8"
         android:layout_width="222dp"
         android:layout_height="43dp"
         android:background="@drawable/fondo"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.367">
+        app:layout_constraintVertical_bias="0.363">
 
         <EditText
             android:id="@+id/txtMarcaIN"
@@ -134,12 +128,36 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvItemsMedicamento"
-        android:layout_width="409dp"
-        android:layout_height="352dp"
+        android:layout_width="410dp"
+        android:layout_height="339dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:layout_constraintVertical_bias="0.812" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/baseline_dehaze_24" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="174dp"
+        android:layout_height="218dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/inventario" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
