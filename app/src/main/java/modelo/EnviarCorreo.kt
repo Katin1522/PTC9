@@ -1,4 +1,4 @@
-package katherine.ceron.ptc9
+package modelo
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -19,6 +19,7 @@ suspend fun  enviarCorreo(receiver: String, subjecto: String, message: String)=w
         put("mail.smtp.auth", "true")
         put("mail.smtp.port", "465")
         }
+
 
     val session = Session.getInstance(props, object : javax.mail.Authenticator() {
         override fun getPasswordAuthentication(): PasswordAuthentication {
