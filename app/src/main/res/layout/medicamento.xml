@@ -19,7 +19,7 @@
         android:background="@drawable/fondo2">
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/imgmedi"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.1"

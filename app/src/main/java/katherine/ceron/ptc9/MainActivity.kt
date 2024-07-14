@@ -35,7 +35,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnIniciarSecion.setOnClickListener{
+<<<<<<< HEAD
            val pantallaPrincipal = Intent(this,Bienvenida::calss.java)
+=======
+           val pantallaPrincipal = Intent(this,Bienvenida::class.java)
+>>>>>>> Fabiola
             GlobalScope.launch (Dispatchers.IO){
 
                 val objConexion = ClaseConexion().cadenaConexion()
