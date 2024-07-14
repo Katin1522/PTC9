@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import modelo.enviarCorreo
 
 class Recuperar_Contra : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

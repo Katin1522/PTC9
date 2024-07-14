@@ -12,6 +12,10 @@ class Adaptador(var DatosR: List<Recetas>): RecyclerView.Adapter<ViewHolder>() {
         val vista = LayoutInflater.from(parent.context).inflate(R.layout.activity_item_cad,parent,false)
         return ViewHolder(vista)
     }
+    fun actualizarLista(nuevaLista: List<class>) {
+        DatosR = nuevaLista
+        notifyDataSetChanged()
+    }
 
     override fun getItemCount() = DatosR.size
 
