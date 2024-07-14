@@ -2,81 +2,141 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
+=======
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de sesion"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212"
+        tools:srcCompat="@tools:sample/avatars" />
 
-            <TextView
-                android:id="@+id/textView696"
-                android:layout_width="87dp"
-                android:layout_height="39dp"
-                android:text="Inventario        medicamentos"
-                tools:layout_editor_absoluteX="27dp"
-                tools:layout_editor_absoluteY="709dp"
-                tools:ignore="MissingConstraints"/>
+    <Button
+        android:id="@+id/btnIniciarSecion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar seción"
+        android:background="@drawable/fondoazul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+>>>>>>> master
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cerrar Sesión"
-                tools:layout_editor_absoluteX="288dp"
-                tools:layout_editor_absoluteY="726dp"
-                tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo electronico o Usuario:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Medicamentos"
-                tools:layout_editor_absoluteX="157dp"
-                tools:layout_editor_absoluteY="726dp"
-                tools:ignore="MissingConstraints"/>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="342dp"
+        android:layout_height="43dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="92dp"
-                android:layout_height="40dp"
-                android:text="Menú "
-                android:textSize="34sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="159dp"
-                tools:layout_editor_absoluteY="43dp" />
+        <EditText
+            android:id="@+id/txtCorreoUsuLog"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingrese su correo o usuario"
+            android:inputType="text" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Perfil"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="226dp" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Notificaciones"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="226dp" />
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Citas"
-                tools:layout_editor_absoluteX="308dp"
-                tools:layout_editor_absoluteY="225dp" />
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="45dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667">
 
+        <EditText
+            android:id="@+id/txtContrasenaLog"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingrese su contraseña"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbOlvidaContra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textAllCaps="false"
+        android:textColor="#131A3C"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+
+<<<<<<< HEAD
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="182dp"
@@ -348,4 +408,6 @@
         app:layout_constraintVertical_bias="0.182"
         tools:srcCompat="@tools:sample/avatars" />
 
+=======
+>>>>>>> master
 </androidx.constraintlayout.widget.ConstraintLayout>

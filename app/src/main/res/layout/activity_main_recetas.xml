@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityRecetas">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receta"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="36dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paciente"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tratamiento"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habitaciòn"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/txtpacienteR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese el nombre del paciente"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <EditText
+        android:id="@+id/txttratamientosR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese los datos"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:id="@+id/txtHabitacionR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese el numero de habitacion"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <Button
+        android:id="@+id/btnguardarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora de administracion"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <EditText
+        android:id="@+id/txthoraAdmiR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingresar hora"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="486dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
