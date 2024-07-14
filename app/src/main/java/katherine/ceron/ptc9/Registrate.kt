@@ -13,6 +13,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import modelo.ClaseConexion
+import java.security.MessageDigest
 import java.util.UUID
 
 class Registrate : AppCompatActivity() {
@@ -31,6 +32,10 @@ class Registrate : AppCompatActivity() {
         val txtContraRe = findViewById<EditText>(R.id.txtContraRe)
         val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
 
+        fun hashSHA256(contasena: String): String {
+            val bytes = MessageDigest.getInstance("SHA-256").digest(contasena.toByteArray())
+            return bytes.joinToString("") { "%02x".format(it) }
+        }
 
         btnRegistrarse.setOnClickListener {
             val objConexion = ClaseConexion().cadenaConexion()
