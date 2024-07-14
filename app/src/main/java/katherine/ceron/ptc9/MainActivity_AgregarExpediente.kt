@@ -18,7 +18,7 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtnombreExp = findViewById<EditText>(R.id.txtnombreEP)
+        val txtnombreExp = findViewById<EditText>(R.id.txtnombreAgregarP)
         val txtHabitacionExp = findViewById<EditText>(R.id.txtHabitacionEP)
         val txtCategoriaExp = findViewById<EditText>(R.id.txtCategoriaEP)
         val txtdiagExp = findViewById<EditText>(R.id.txtdiagnosEP)
