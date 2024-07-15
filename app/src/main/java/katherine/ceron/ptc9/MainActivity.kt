@@ -2,7 +2,6 @@ package katherine.ceron.ptc9
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings.Global
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -20,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.txtnombreAgregarP)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.MainActivity)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
         val txtCorreoUsuLog = findViewById<EditText>(R.id.txtCorreoUsuLog)
-        val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasenaLog)
-        val lbOlvidarContra = findViewById<TextView>(R.id.lbOlvidaContra)
+        val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasena)
+        val lbOlvidarContra = findViewById<TextView>(R.id.olvidarContraseña)
         val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSecion)
 
         lbOlvidarContra.setOnClickListener{
