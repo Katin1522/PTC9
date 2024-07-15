@@ -28,14 +28,14 @@ class MainActivity : AppCompatActivity() {
         val txtCorreoUsuLog = findViewById<EditText>(R.id.txtCorreoUsuLog)
         val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasenaLog)
         val lbOlvidarContra = findViewById<TextView>(R.id.lbOlvidaContra)
-        val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSecion)
+        val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSesion)
 
         lbOlvidarContra.setOnClickListener{
             val pantallaRegistrate = Intent()
         }
 
         btnIniciarSecion.setOnClickListener{
-           val pantallaPrincipal = Intent(this,Bienvenida::calss.java)
+           val pantallaPrincipal = Intent(this,Bienvenida::class.java)
             GlobalScope.launch (Dispatchers.IO){
 
                 val objConexion = ClaseConexion().cadenaConexion()

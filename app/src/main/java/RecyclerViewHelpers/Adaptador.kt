@@ -18,6 +18,7 @@ class Adaptador(var DatosR: List<Recetas>): RecyclerView.Adapter<ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = DatosR [position]
         holder.txtNombreCard.text = item.Paciente
+        holder.txtDescripcionCard.text = item.Tratamiento
 
     }
 }
