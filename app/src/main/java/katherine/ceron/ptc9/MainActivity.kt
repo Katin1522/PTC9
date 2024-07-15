@@ -28,11 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
         val txtCorreoUsuLog = findViewById<EditText>(R.id.txtCorreoUsuLog)
         val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasena)
-<<<<<<< HEAD
         val lbOlvidarContra = findViewById<TextView>(R.id.olvidarContraseña)
-=======
-        val lbOlvidarContra = findViewById<TextView>(R.id.lblOlvidarContraseña)
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
         val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSecion)
 
         lbOlvidarContra.setOnClickListener{

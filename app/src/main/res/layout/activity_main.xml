@@ -50,11 +50,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-<<<<<<< HEAD
-        android:id="@+id/olvidarContraseña"
-=======
-        android:id="@+id/lblOlvidarContraseña"
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
+        android:id="@+id/correoElectronico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo electronico o Usuario:"
@@ -138,11 +134,7 @@
 
 
     <TextView
-<<<<<<< HEAD
         android:id="@+id/olvidarContraseña"
-=======
-        android:id="@+id/lblOlvidarContraseña"
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Olvidaste la contraseña?"
