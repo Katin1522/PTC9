@@ -6,19 +6,6 @@
     android:id="@+id/Bienvenida"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".Bienvenida">
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/configuration_icon_62" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-    tools:context=".Bienvenida"/>
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
+

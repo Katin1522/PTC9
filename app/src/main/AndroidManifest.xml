@@ -30,13 +30,9 @@
         tools:targetApi="31">
 
         <activity
-<<<<<<< HEAD
             android:name=".notificaciones"
             android:exported="false"  />
-=======
-            android:name=".MainActivity"
-            android:exported="true"/>
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
+
         <activity
             android:name=".menuUsuario"
             android:exported="false" />
@@ -73,7 +69,6 @@
         <activity
             android:name=".MainActivity_ConfiguracionSistema"
             android:exported="false" />
-<<<<<<< HEAD
         <activity
             android:name=".MainActivity"
             android:exported="true" >
@@ -96,9 +91,5 @@
             android:name=".Registrate"
             android:exported="false"
              />
-</application>
-
-=======
     </application>
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
 </manifest>
