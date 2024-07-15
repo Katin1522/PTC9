@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<<<<<<< HEAD
-=======
+
 
     <TextView
         android:id="@+id/textView2"
@@ -47,7 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.856" />
->>>>>>> master
 
     <TextView
         android:id="@+id/textView4"
@@ -61,7 +60,8 @@
         app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.42"
+        tools:ignore="DuplicateIds" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -112,277 +112,25 @@
         app:layout_constraintVertical_bias="0.667">
 
         <EditText
-            android:id="@+id/txtContrasenaLog"
-            android:layout_width="340dp"
+            android:id="@+id/txtContrasena"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="Ingrese su contraseña"
+            android:hint="Ingrese contraseña"
             android:inputType="text" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/lbOlvidaContra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿Olvidaste tu contraseña?"
-        android:textAllCaps="false"
-        android:textColor="#131A3C"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="182dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="2300dp"
+        android:scaleType="fitEnd"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:srcCompat="@drawable/medicine_capsule_3d_icon_illustration_png"
+        tools:layout_editor_absoluteX="115dp"
+        tools:ignore="MissingConstraints" />
 
-
-<<<<<<< HEAD
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="182dp"
-                android:layout_height="154dp"
-                android:layout_marginTop="2300dp"
-                android:scaleType="fitEnd"
-                app:layout_constraintBottom_toTopOf="@+id/btnCitas"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.638"
-                app:srcCompat="@drawable/medicine_capsule_3d_icon_illustration_png"
-                tools:layout_editor_absoluteX="115dp" />
-
-            <TextView
-                android:id="@+id/textView696"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Configuracion"
-                tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="398dp" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Expediente"
-                tools:layout_editor_absoluteX="174dp"
-                tools:layout_editor_absoluteY="394dp" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Habitaciones"
-                tools:layout_editor_absoluteX="285dp"
-                tools:layout_editor_absoluteY="398dp" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Horarios"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="557dp" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Consulta medica"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="557dp" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Receta"
-                tools:layout_editor_absoluteX="318dp"
-                tools:layout_editor_absoluteY="558dp" />
-
-            <ImageButton
-                android:id="@+id/btnPerfil"
-                android:layout_width="98dp"
-                android:layout_height="101dp"
-                android:scaleType="fitStart"
-                android:scaleX="1"
-                android:scaleY="1"
-                android:visibility="visible"
-                app:srcCompat="@drawable/_847419"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="116dp" />
-
-            <ImageButton
-                android:id="@+id/btnNotificacion"
-                android:layout_width="108dp"
-                android:layout_height="100dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_226663"
-                tools:layout_editor_absoluteX="157dp"
-                tools:layout_editor_absoluteY="116dp" />
-
-            <ImageButton
-                android:id="@+id/btnCitas"
-                android:layout_width="102dp"
-                android:layout_height="99dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/png_clipart_notepad_paper_computer_icons_others_miscellaneous_angle"
-                tools:layout_editor_absoluteX="289dp"
-                tools:layout_editor_absoluteY="117dp" />
-
-            <ImageButton
-                android:id="@+id/btnConfiguracion"
-                android:layout_width="96dp"
-                android:layout_height="93dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/configuration_icon_62"
-                tools:layout_editor_absoluteX="19dp"
-                tools:layout_editor_absoluteY="274dp" />
-
-            <ImageButton
-                android:id="@+id/btnExpediente"
-                android:layout_width="107dp"
-                android:layout_height="108dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_135725"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="273dp" />
-
-            <ImageButton
-                android:id="@+id/btnHabitacion"
-                android:layout_width="106dp"
-                android:layout_height="109dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_66489"
-                tools:layout_editor_absoluteX="285dp"
-                tools:layout_editor_absoluteY="268dp" />
-
-            <ImageButton
-                android:id="@+id/btnHorario"
-                android:layout_width="107dp"
-                android:layout_height="102dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_926396"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="443dp" />
-
-            <ImageButton
-                android:id="@+id/btnConsulta"
-                android:layout_width="106dp"
-                android:layout_height="102dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_326320"
-                tools:layout_editor_absoluteX="159dp"
-                tools:layout_editor_absoluteY="442dp" />
-
-            <ImageButton
-                android:id="@+id/btnReceta"
-                android:layout_width="102dp"
-                android:layout_height="105dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/f1d0807f8ffad0197757d840bdc97d0b_icono_de_registro_medico"
-                tools:layout_editor_absoluteX="289dp"
-                tools:layout_editor_absoluteY="439dp" />
-
-            <ImageButton
-                android:id="@+id/btnInventario"
-                android:layout_width="101dp"
-                android:layout_height="103dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_524983"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="594dp" />
-
-            <ImageButton
-                android:id="@+id/btnMedicamentos"
-                android:layout_width="122dp"
-                android:layout_height="112dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_599153"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="597dp" />
-
-            <ImageButton
-                android:id="@+id/btnCerrarSesion"
-                android:layout_width="114dp"
-                android:layout_height="114dp"
-                android:scaleType="fitEnd"
-                app:srcCompat="@drawable/_828407"
-                tools:layout_editor_absoluteX="277dp"
-                tools:layout_editor_absoluteY="594dp" />
-=======
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Iniciar seción"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
-
-    <EditText
-        android:id="@+id/txtUsuarioSe"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Ingrese correo o ususario"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456" />
-
-    <EditText
-        android:id="@+id/txtContrasena"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Ingrese contraseña"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603"/>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Iniciar sesión"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Correo electrónico o Usuario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contraseña"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
 
     <TextView
         android:id="@+id/textView4"
@@ -391,23 +139,10 @@
         android:text="¿Olvidaste la contraseña?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.75"
+        tools:ignore="DuplicateIds" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182"
-        tools:srcCompat="@tools:sample/avatars" />
-
-=======
->>>>>>> master
 </androidx.constraintlayout.widget.ConstraintLayout>

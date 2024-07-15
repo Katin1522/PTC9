@@ -35,9 +35,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnIniciarSecion.setOnClickListener{
-
-           val pan = Intent(this,Bienvenida::class.java)
-
            val pantallaPrincipal = Intent(this,Bienvenida::class.java)
             GlobalScope.launch (Dispatchers.IO){
 
@@ -56,7 +53,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-
+}
     }
 
-}

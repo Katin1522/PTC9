@@ -13,6 +13,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import modelo.ClaseConexion
+import java.security.MessageDigest
 import java.util.UUID
 
 class Registrate : AppCompatActivity() {
@@ -31,28 +32,29 @@ class Registrate : AppCompatActivity() {
         val txtContraRe = findViewById<EditText>(R.id.txtContraRe)
         val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
 
+        fun hashSHA256(contasena: String): String {
+            val bytes = MessageDigest.getInstance("SHA-256").digest(contasena.toByteArray())
+            return bytes.joinToString("") { "%02x".format(it) }
+        }
 
         btnRegistrarse.setOnClickListener {
             val objConexion = ClaseConexion().cadenaConexion()
+            val contrasenaRe = hashSHA256(txtContraRe.text.toString())
+
             CoroutineScope(Dispatchers.IO).launch {
-                val crearUsuario =
-                    objConexion?.prepareStatement("insert into usuarios(foto_usuario, nombreusuario, contrasenausuario)  values ( null,?,?,?); ")!!
+                val crearUsuario = objConexion?.prepareStatement("insert into usuarios(foto_usuario, nombreusuario, contrasenausuario)  values ( null,?,?,?); ")!!
                 crearUsuario.setString(2, txtNombreRe.text.toString())
                 crearUsuario.setString(3, txtUsuarioRe.text.toString())
-                crearUsuario.setString(4, txtContraRe.text.toString())
+                crearUsuario.setString(4, contrasenaRe)
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(
-                        this@Registrate,
-                        "Usuario creado exitosamewnte",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(this@Registrate, "Usuario creado exitosamewnte", Toast.LENGTH_SHORT).show()
                     txtNombreRe.setText("")
                     txtUsuarioRe.setText("")
                     txtContraRe.setText("")
                 }
-
             }
         }
+
     }
 }
 
