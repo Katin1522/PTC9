@@ -62,28 +62,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499">
 
-<<<<<<< HEAD
-            <ImageView
-                android:id="@+id/imageView61"
-                android:layout_width="342dp"
-                android:layout_height="38dp"
-                app:srcCompat="@drawable/fondoazul"
-                tools:layout_editor_absoluteX="31dp"
-                tools:layout_editor_absoluteY="438dp"
-                tools:ignore="MissingConstraints"/>
-
-            <Button
-                android:id="@+id/btnRegistrarse"
-                android:layout_width="136dp"
-                android:layout_height="39dp"
-                android:layout_marginTop="620dp"
-                android:lineSpacingExtra="1sp"
-                android:text="Registrase"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="155dp"
-                tools:ignore="MissingConstraints"/>
-=======
-
         <EditText
             android:id="@+id/txtNombreRe"
             android:layout_width="350dp"
@@ -151,7 +129,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.82">
->>>>>>> master
+
 
         <EditText
             android:id="@+id/txtContraRe"
@@ -174,79 +152,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.944"
-        tools:ignore="MissingConstraints" />
-
-<<<<<<< HEAD
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="333dp"
-                android:layout_height="40dp"
-                app:srcCompat="@drawable/fondoazul"
-                tools:layout_editor_absoluteX="31dp"
-                tools:layout_editor_absoluteY="366dp"
-                tools:ignore="MissingConstraints"/>
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contraseña"
-                tools:layout_editor_absoluteX="31dp"
-                tools:layout_editor_absoluteY="419dp"
-                tools:ignore="MissingConstraints"/>
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="344dp"
-                android:layout_height="36dp"
-                app:srcCompat="@drawable/fondoazul"
-                tools:layout_editor_absoluteX="31dp"
-                tools:layout_editor_absoluteY="299dp"
-                tools:ignore="MissingConstraints"/>
-
-            <EditText
-                android:id="@+id/txtNombreRegistro"
-                android:layout_width="334dp"
-                android:layout_height="41dp"
-
-                android:ems="10"
-                android:inputType="text"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="293dp"
-                tools:ignore="MissingConstraints"/>
-
-            <EditText
-                android:id="@+id/txtUsuarioRegistro"
-                android:layout_width="335dp"
-                android:layout_height="47dp"
-
-                android:ems="10"
-                android:inputType="text"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="358dp"
-                tools:ignore="MissingConstraints"/>
-
-            <EditText
-                android:id="@+id/txtCOntrsenaRegistro"
-                android:layout_width="336dp"
-                android:layout_height="46dp"
-                android:ems="10"
-                android:inputType="textPassword"
-                tools:layout_editor_absoluteX="33dp"
-                tools:layout_editor_absoluteY="428dp"
-                tools:ignore="MissingConstraints"/>
-
-            <Button
-                android:id="@+id/btnRegistrarse"
-                android:layout_width="136dp"
-                android:layout_height="39dp"
-                android:lineSpacingExtra="1sp"
-                android:text="Registrase"
-                tools:layout_editor_absoluteX="142dp"
-                tools:layout_editor_absoluteY="437dp" />
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-=======
->>>>>>> master
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
