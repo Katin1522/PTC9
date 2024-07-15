@@ -32,7 +32,6 @@
         <activity
             android:name=".notificaciones"
             android:exported="false"  />
-
         <activity
             android:name=".menuUsuario"
             android:exported="false" />
@@ -91,5 +90,6 @@
             android:name=".Registrate"
             android:exported="false"
              />
-    </application>
+
+</application>
 </manifest>

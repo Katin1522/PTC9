@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasena)
         val lbOlvidarContra = findViewById<TextView>(R.id.lblOlvidarContraseña)
         val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSecion)
-
         lbOlvidarContra.setOnClickListener{
             val pantallaRegistrate = Intent()
         }
