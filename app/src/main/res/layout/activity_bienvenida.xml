@@ -6,7 +6,6 @@
     android:id="@+id/Bienvenida"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context=".Bienvenida">
 
     <ImageView
@@ -19,6 +18,3 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/configuration_icon_62" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-    tools:context=".Bienvenida"/>
->>>>>>> 5302487ee96ce609f9c35edb4b71a13e03a07641
