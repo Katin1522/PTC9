@@ -51,12 +51,11 @@ class MainActivityAjustesInventario : AppCompatActivity() {
                 }
             }
             return card
-        }
-
 
     }
 }
 
 private fun DataClassCard.add(card: DataClassCard) {
 
+}
 }

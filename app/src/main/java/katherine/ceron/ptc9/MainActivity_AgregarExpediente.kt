@@ -1,11 +1,14 @@
 package katherine.ceron.ptc9
 
+import android.content.Context
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -26,6 +29,13 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
         val txthistorialExp = findViewById<EditText>(R.id.txthistorialEP)
         val btnAgregarExp = findViewById<Button>(R.id.btnAgregarExp)
 
+        val listaHabitaciones = listOf("Habitacion 1", "Habitacion 2", "Habitacion 3")
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaHabitaciones)
+        listaHabitaciones.also { spinner2Habitaciones.adapter = adapter  }
+        val listaCategoria = listOf("Categoria 1", "Categoria 2", "Categoria 3")
+        val adapter2 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaCategoria)
+        listaCategoria.also { spinner3Categoria.adapter = adapter2 }
+
         btnAgregarExp.setOnClickListener {
             val nombre = txtnombreExp.text.toString()
             val habitacion = spinner2Habitaciones.toString()
@@ -34,4 +44,8 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
             val historial = txthistorialExp.text.toString()
         }
         }
+
+    private fun requireContext(): Context {
+        TODO("Not yet implemented")
     }
+}

@@ -3,6 +3,7 @@ package katherine.ceron.ptc9
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,23 +14,23 @@ class MainActivity_editarExpediente : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_editar_expediente)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btnAgregarExpedit)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtnombreEP = findViewById<EditText>(R.id.txtnombreAgregarP)
-        val txtHabitacionEP = findViewById<EditText>(R.id.txtHabitacionEP)
-        val txtCategoriaEP= findViewById<EditText>(R.id.txtCategoriaEP)
-        val txtdiagnosEP = findViewById<EditText>(R.id.txtdiagnosEP)
-        val txthistorialEP = findViewById<EditText>(R.id.txthistorialEP)
-        val btnAgregarEP = findViewById<Button>(R.id.btnAgregarEP)
-        val btnEliminarEP = findViewById<Button>(R.id.btnEliminarEP)
+        val txtnombreEP = findViewById<EditText>(R.id.txtnombreeditarP)
+        val spinner2HabitacionesEdit = findViewById<Spinner>(R.id.spinner2HabitacionesEdit)
+        val spinner3CategoriaEdit= findViewById<Spinner>(R.id.spinner3CategoriaEdit)
+        val txtdiagnosEP = findViewById<EditText>(R.id.txtdiagnosEdit)
+        val txthistorialEP = findViewById<EditText>(R.id.txthistorialedit)
+        val btnAgregarExpedit = findViewById<Button>(R.id.btnAgregarExpedit)
+        val btnElimirarExitP = findViewById<Button>(R.id.btnElimirarExitP)
 
-        btnAgregarEP.setOnClickListener {
+        btnAgregarExpedit.setOnClickListener {
             val nombreEP = txtnombreEP.text.toString()
-            val habitacionEP = txtHabitacionEP.text.toString()
-            val CategoriaEP = txtCategoriaEP.text.toString()
+            val habitacionEP = spinner2HabitacionesEdit.toString()
+            val CategoriaEP = spinner3CategoriaEdit.toString()
             val diagnosticoEP = txtdiagnosEP.text.toString()
             val historialEP = txthistorialEP.text.toString()
         }

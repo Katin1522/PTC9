@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/btnAgregarAin"
         android:layout_width="166dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:backgroundTint="#C56DE6"
         android:text="Agregar"
         android:textColor="#FFFFFF"
