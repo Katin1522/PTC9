@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnIniciarSecion.setOnClickListener{
-
+           val pantallaPrincipal = Intent(this,Bienvenida::calss.java)
+            GlobalScope.launch (Dispatchers.IO){
 
                 val objConexion = ClaseConexion().cadenaConexion()
                 val comprobarUsuario = objConexion?.prepareStatement("SELECT * FROM USUARIO WHERE USUARIO = ? AND CLAVE = ? ")!!
@@ -44,9 +45,8 @@ class MainActivity : AppCompatActivity() {
 
                 val resultado = comprobarUsuario.executeQuery()
                 if (resultado.next()){
-                    startActivity()
-                }
-                else {
+                    startActivity(pantallaPrincipal)
+                } else {
                     println("Sus credenciales estan incorrectas verifique sus credenciales o no ha creado una cuenta")
                 }
             }
@@ -55,3 +55,5 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+}

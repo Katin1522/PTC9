@@ -26,8 +26,6 @@ class MainActivityAjustesInventario : AppCompatActivity() {
         val txtMarcaIn = findViewById<EditText>(R.id.txtMarcaIN)
         val txtCantidadIn = findViewById<EditText>(R.id.txtCantidadIn)
         val btnAgregarAin = findViewById<Button>(R.id.btnAgregarAin)
-        val btnactualizarAin = findViewById<Button>(R.id.btnactualizarAin)
-        val btneliminarAin = findViewById<Button>(R.id.btneliminarAin)
         val rcvItemsMedicamento = findViewById<RecyclerView>(R.id.rcvItemsMedicamento)
 
         rcvItemsMedicamento.layoutManager = LinearLayoutManager(this)
@@ -53,8 +51,11 @@ class MainActivityAjustesInventario : AppCompatActivity() {
                 }
             }
             return card
-        }
-
 
     }
+}
+
+private fun DataClassCard.add(card: DataClassCard) {
+
+}
 }
