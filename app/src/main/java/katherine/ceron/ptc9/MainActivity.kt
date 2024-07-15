@@ -1,5 +1,6 @@
 package katherine.ceron.ptc9
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings.Global
@@ -16,6 +17,7 @@ import kotlinx.coroutines.launch
 import modelo.ClaseConexion
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,8 +28,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         val txtCorreoUsuLog = findViewById<EditText>(R.id.txtCorreoUsuLog)
-        val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasenaLog)
-        val lbOlvidarContra = findViewById<TextView>(R.id.lbOlvidaContra)
+        val txtContrasenaLog = findViewById<EditText>(R.id.txtContrasena)
+        val lbOlvidarContra = findViewById<TextView>(R.id.lblOlvidarContraseña)
         val btnIniciarSecion = findViewById<Button>(R.id.btnIniciarSecion)
 
         lbOlvidarContra.setOnClickListener{

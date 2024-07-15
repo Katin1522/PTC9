@@ -29,7 +29,7 @@ class Registrate : AppCompatActivity() {
         val txtNombreRe = findViewById<EditText>(R.id.txtNombreRe)
         val txtUsuarioRe= findViewById<EditText>(R.id.txtNombreRe)
         val txtContraRe = findViewById<EditText>(R.id.txtContraRe)
-        val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
+        val btnRegistrarse = findViewById<Button>(R.id.btnRegistro)
 
         fun hashSHA256(contasena: String): String {
             val bytes = MessageDigest.getInstance("SHA-256").digest(contasena.toByteArray())

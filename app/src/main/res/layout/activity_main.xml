@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lblOlvidarContraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo electronico o Usuario:"
@@ -133,7 +133,7 @@
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lblOlvidarContraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Olvidaste la contraseña?"
