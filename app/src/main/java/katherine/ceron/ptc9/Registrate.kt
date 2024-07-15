@@ -39,25 +39,22 @@ class Registrate : AppCompatActivity() {
 
         btnRegistrarse.setOnClickListener {
             val objConexion = ClaseConexion().cadenaConexion()
+            val contrasenaRe = hashSHA256(txtContraRe.text.toString())
+
             CoroutineScope(Dispatchers.IO).launch {
-                val crearUsuario =
-                    objConexion?.prepareStatement("insert into usuarios(foto_usuario, nombreusuario, contrasenausuario)  values ( null,?,?,?); ")!!
+                val crearUsuario = objConexion?.prepareStatement("insert into usuarios(foto_usuario, nombreusuario, contrasenausuario)  values ( null,?,?,?); ")!!
                 crearUsuario.setString(2, txtNombreRe.text.toString())
                 crearUsuario.setString(3, txtUsuarioRe.text.toString())
-                crearUsuario.setString(4, txtContraRe.text.toString())
+                crearUsuario.setString(4, contrasenaRe)
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(
-                        this@Registrate,
-                        "Usuario creado exitosamewnte",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(this@Registrate, "Usuario creado exitosamewnte", Toast.LENGTH_SHORT).show()
                     txtNombreRe.setText("")
                     txtUsuarioRe.setText("")
                     txtContraRe.setText("")
                 }
-
             }
         }
+
     }
 }
 
