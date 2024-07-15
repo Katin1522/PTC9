@@ -1,10 +1,14 @@
 package katherine.ceron.ptc9
 
+import android.content.Context
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -19,18 +23,29 @@ class MainActivity_AgregarExpediente : AppCompatActivity() {
             insets
         }
         val txtnombreExp = findViewById<EditText>(R.id.txtnombreAgregarP)
-        val txtHabitacionExp = findViewById<EditText>(R.id.txtHabitacionEP)
-        val txtCategoriaExp = findViewById<EditText>(R.id.txtCategoriaEP)
+        val spinner2Habitaciones = findViewById<Spinner>(R.id.spinner2Habitaciones)
+        val spinner3Categoria = findViewById<Spinner>(R.id.spinner3Categoria)
         val txtdiagExp = findViewById<EditText>(R.id.txtdiagnosEP)
         val txthistorialExp = findViewById<EditText>(R.id.txthistorialEP)
         val btnAgregarExp = findViewById<Button>(R.id.btnAgregarExp)
 
+        val listaHabitaciones = listOf("Habitacion 1", "Habitacion 2", "Habitacion 3")
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaHabitaciones)
+        listaHabitaciones.also { spinner2Habitaciones.adapter = adapter  }
+        val listaCategoria = listOf("Categoria 1", "Categoria 2", "Categoria 3")
+        val adapter2 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaCategoria)
+        listaCategoria.also { spinner3Categoria.adapter = adapter2 }
+
         btnAgregarExp.setOnClickListener {
             val nombre = txtnombreExp.text.toString()
-            val habitacion = txtHabitacionExp.text.toString()
-            val categoria = txtCategoriaExp.text.toString()
+            val habitacion = spinner2Habitaciones.toString()
+            val categoria = spinner3Categoria.toString()
             val diagnostico = txtdiagExp.text.toString()
             val historial = txthistorialExp.text.toString()
         }
         }
+
+    private fun requireContext(): Context {
+        TODO("Not yet implemented")
     }
+}

@@ -8,30 +8,13 @@
     android:layout_height="match_parent"
     tools:context=".Bienvenida">
 
-    <TextView
-        android:id="@+id/textView31"
+    <ImageView
+        android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="202dp" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="a"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="268dp" />
-
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dlph"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="331dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/DLPH" />
 </androidx.constraintlayout.widget.ConstraintLayout>
