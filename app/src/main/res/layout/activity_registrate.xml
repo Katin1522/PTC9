@@ -7,163 +7,170 @@
     android:layout_height="match_parent"
     tools:context=".Registrate">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/appbar_scrolling_view_behavior"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="-102dp">
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        tools:ignore="MissingConstraints" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
-            <Button
-                android:id="@+id/btnRegistro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="600dp"
-                android:layout_marginEnd="100dp"
-                android:text="Registrar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="304dp"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103"
+        app:srcCompat="@drawable/imagen" />
 
-            <TextView
-                android:id="@+id/textView32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Registrate"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0" />
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="304dp"
-                android:layout_height="227dp"
-                android:layout_marginTop="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView32"
-                app:srcCompat="@drawable/imagen" />
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="271dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.618"
+        app:srcCompat="@drawable/fondoazul"
+        tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/textView47"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:text="Nombre"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.18"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtContraRe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRe"
+        app:layout_constraintVertical_bias="0.478"
+        app:srcCompat="@drawable/fondoazul"
+        tools:ignore="MissingConstraints" />
 
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="271dp"
-                android:layout_height="52dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.37"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/fondoazul"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="327dp" />
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fondoazul"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="579dp" />
 
-            <ImageView
-                android:id="@+id/imageView22"
-                android:layout_width="266dp"
-                android:layout_height="52dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.365"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/fondoazul"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="409dp" />
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="273dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.331"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:layout_constraintVertical_bias="0.527"
+        app:srcCompat="@drawable/fondoazul"
+        tools:ignore="MissingConstraints" />
 
-            <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/fondoazul"
-                tools:layout_editor_absoluteX="274dp"
-                tools:layout_editor_absoluteY="579dp"
-                tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/txtNombreRe"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtContraRe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-            <ImageView
-                android:id="@+id/imageView24"
-                android:layout_width="260dp"
-                android:layout_height="46dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/fondoazul"
-                tools:layout_editor_absoluteY="492dp"
-                tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:layout_constraintVertical_bias="1.0" />
 
-            <EditText
-                android:id="@+id/txtNombreRe"
-                android:layout_width="250dp"
-                android:layout_height="47dp"
-                android:ems="10"
-                android:inputType="text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
-                tools:layout_editor_absoluteY="329dp" />
+    <EditText
+        android:id="@+id/txtUsuarioRe"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtContraRe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRe"
+        app:layout_constraintVertical_bias="0.472"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-            <TextView
-                android:id="@+id/textView69"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Usuario"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.157"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtNombreRe" />
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="70dp"
+        android:layout_height="15dp"
+        android:text="Contrseña"
+        app:layout_constraintBottom_toTopOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:layout_constraintVertical_bias="0.92"
+        tools:ignore="MissingConstraints" />
 
-            <EditText
-                android:id="@+id/txtUsuarioRe"
-                android:layout_width="258dp"
-                android:layout_height="51dp"
-                android:ems="10"
-                android:inputType="text"
-                tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
-                tools:layout_editor_absoluteX="53dp"
-                tools:layout_editor_absoluteY="410dp" />
+    <EditText
+        android:id="@+id/txtContraRe"
+        android:layout_width="258dp"
+        android:layout_height="40dp"
+        android:autofillHints="100"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-            <TextView
-                android:id="@+id/textView70"
-                android:layout_width="70dp"
-                android:layout_height="15dp"
-                android:layout_marginTop="16dp"
-                android:text="Contrseña"
-                app:layout_constraintTop_toBottomOf="@+id/imageView22"
-                tools:layout_editor_absoluteX="53dp"
-                tools:ignore="MissingConstraints" />
-
-            <EditText
-                android:id="@+id/txtContraRe"
-                android:layout_width="258dp"
-                android:layout_height="40dp"
-                android:autofillHints="100"
-                android:ems="10"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.359"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
-                tools:layout_editor_absoluteY="492dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
