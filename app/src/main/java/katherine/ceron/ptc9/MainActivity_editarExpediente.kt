@@ -25,7 +25,6 @@ class MainActivity_editarExpediente : AppCompatActivity() {
         val txtdiagnosEP = findViewById<EditText>(R.id.txtdiagnosEdit)
         val txthistorialEP = findViewById<EditText>(R.id.txthistorialedit)
         val btnAgregarExpedit = findViewById<Button>(R.id.btnAgregarExpedit)
-        val btnElimirarExitP = findViewById<Button>(R.id.btnElimirarExitP)
 
         btnAgregarExpedit.setOnClickListener {
             val nombreEP = txtnombreEP.text.toString()

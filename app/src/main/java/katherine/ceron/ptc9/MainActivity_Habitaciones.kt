@@ -46,10 +46,10 @@ class MainActivity_Habitaciones : AppCompatActivity() {
 
           val listaHabitaciones = mutableListOf<tbHabitaciones>()
 
-          while (resultSet.next()){
-              val ID_HABITACION = resultSet.getInt("ID_HABITACION")
-              val ID_PACIENTE =resultSet.getInt("ID_PACIENTE")
-              val nombrePaciente = resultSet.getString("nombrePaciente")
+          while (resultSet!!.next()){
+              val ID_HABITACION = resultSet!!.getInt("ID_HABITACION")
+              val ID_PACIENTE = resultSet!!.getInt("ID_PACIENTE")
+              val nombrePaciente = resultSet!!.getString("nombrePaciente")
 
               val habitacion = tbHabitaciones(ID_HABITACION,ID_PACIENTE,nombrePaciente)
 
