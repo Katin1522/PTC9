@@ -12,7 +12,7 @@ class adaptadorhabi (var datos: List<tbHabitaciones>): RecyclerView.Adapter<view
         return viewholderhabi(view)
     }
 
-    override fun getItemCount():datoss.size {
+    override fun getItemCount() = datos.size {
 
     }
 

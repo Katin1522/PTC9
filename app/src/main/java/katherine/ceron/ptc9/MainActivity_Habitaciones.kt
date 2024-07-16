@@ -46,7 +46,7 @@ class MainActivity_Habitaciones : AppCompatActivity() {
 
           val listaHabitaciones = mutableListOf<tbHabitaciones>()
 
-          while (resultSet.next()){
+          while (resultSet?.next() == true){
               val ID_HABITACION = resultSet.getInt("ID_HABITACION")
               val ID_PACIENTE =resultSet.getInt("ID_PACIENTE")
               val nombrePaciente = resultSet.getString("nombrePaciente")
