@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnIniciarSecion.setOnClickListener{
-           val pantallaPrincipal = Intent(this,Bienvenida::class.java)
+           val pantallaPrincipal = Intent(this,activity_menu::class.java)
             GlobalScope.launch (Dispatchers.IO){
 
                 val objConexion = ClaseConexion().cadenaConexion()

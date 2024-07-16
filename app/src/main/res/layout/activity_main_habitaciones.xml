@@ -12,75 +12,119 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Habitaciones"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="50dp" />
+        android:textColor="#0D0D0D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
+        android:textColor="#101010"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
 
     <TextView
         android:id="@+id/NombreCM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Habitacion"
+        android:textColor="#0D0D0D"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="183dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
 
-    <EditText
-        android:id="@+id/txtnumeroHabi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingrese numero de la habitacion"
-        android:inputType="numberPassword"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="205dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="323dp"
+        android:layout_height="52dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192">
 
-    <EditText
-        android:id="@+id/txtConfirmarContra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Ingresar el nombre"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="110dp" />
+        <EditText
+            android:id="@+id/txtConfirmarContra"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingresar el nombre"
+            android:inputType="text" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnAgregarHabi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="274dp" />
-
-    <Button
-        android:id="@+id/btnHabitaciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Habitaciones de los pacientes"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="649dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="289dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:id="@+id/rcvHabitaciones"
+        android:layout_width="408dp"
+        android:layout_height="371dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="37dp"
-        android:layout_height="33dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="26dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/baseline_dehaze_24" />
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="53dp"
+        android:background="@drawable/fondo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349">
+
+        <EditText
+            android:id="@+id/txtnumeroHabi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingrese numero de la habitacion"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
